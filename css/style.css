@@ -1,0 +1,701 @@
+body,
+html {
+    margin: 0;
+    padding: 0 50px; /* Mantener el margen blanco en los extremos derecho e izquierdo */
+    background-color: aliceblue;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: auto;
+    border: px solid;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(51, 77, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    z-index: 1000; /* Asegura que la cabecera esté por encima del resto del contenido */
+}
+.texto {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Agregar borde inferior */
+}
+
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-right: 10px; /* Ajuste del margen entre los iconos */
+}
+
+.social-icon img {
+    width: 30px; /* Tamaño de los iconos */
+    height: auto;
+}
+
+h1,
+h2 {
+    margin: 0;
+    text-align: center; /* Centrar horizontalmente el título */
+}
+
+h1 {
+    font-size: 70px;
+}
+
+header p {
+    text-align: center; /* Centrar horizontalmente el subtitulo */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 120px;
+    font-family: 400 normal 12px / 22px Clarkson, Proxima Nova, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+}
+
+/* Estilos para los botones "Suscribete", "Calculadora de IMC" y "Planificador de Comidas" */
+input[type="submit"].boton-gris-claro {
+    background-color: rgb(200, 200, 200); /* Color de fondo gris claro */
+    color: rgb(51, 77, 58); /* Color del texto */
+    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave para los colores */
+    padding: 20px 40px; /* Ajustar el tamaño del botón */
+    margin-right: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrar verticalmente */
+}
+
+.Img1 {
+    margin-top: 150px; /* Ajustar margen superior para más espacio */
+    margin-bottom: 20px; /* Ajustar margen inferior para más espacio */
+    padding: 0 50px; /* Ajustar relleno horizontal */
+}
+
+.Img1 img {
+    width: 100%; /* Para asegurarse de que la imagen ocupe todo el ancho del contenedor */
+    display: block; /* Para evitar problemas de alineación */
+    
+}
+
+.Img1 img {
+    width: 100%;
+    max-height: 490px; 
+    object-fit: cover; /* Para mantener la relación de aspecto y evitar que la imagen se deforme */
+    display: block;
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+}
+
+/* Estilos específicos para los títulos, párrafos y botones de las secciones */
+section h2,
+section p,
+section input[type="submit"] {
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para los planes */
+section#Planes {
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección del flex para colocar el título encima de los planes */
+    align-items: center; /* Centrar los elementos horizontalmente */
+}
+
+section#Planes h2 {
+    margin-bottom: 40px; /* Espacio entre el título y los planes */
+}
+
+.planes-container {
+    display: flex;
+    justify-content: center; /* Centrar los planes horizontalmente */
+    
+}
+
+.planes-container .plan {
+    flex: 0 0 calc(33.333% - 20px); /* Establecer el ancho de cada plan */
+    margin: 0 10px; /* Margen entre los planes */
+    padding: 10px; /* Espacio interno dentro de cada plan */
+    text-align: center; /* Centrar el contenido */
+    border: 1px solid #ccc; /* Borde para visualización */
+}
+
+.planes-container .plan img {
+    max-width: 100px; /* Tamaño máximo de las imágenes */
+}
+
+/* Estilos para la sección "Acerca de" */
+section#Acerca\ de {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px
+}
+
+.about-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    max-height: 300px; 
+}
+
+footer {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(51, 77, 58);
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+li,
+label,
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    color: beige;
+}
+/* Estilos para la sección de nutrición */
+section#Nutrición {
+    display: flex;
+    flex-direction: row; /* Cambiar la dirección del flex a horizontal */
+    align-items: center; /* Centrar verticalmente los elementos */
+    font-size: 20px
+}
+
+/* Estilos para el contenedor del video */
+.nutrition-section .video-container {
+    flex: 1; /* Que ocupe el espacio disponible */
+    margin-right: 20px; /* Espacio entre el video y el contenido */
+}
+
+/* Estilos para el contenedor del contenido */
+.nutrition-section .content-container {
+    flex: 1; /* Que ocupe el espacio disponible */
+}
+
+/* Ajustes de estilo para el título, párrafo y botón */
+.nutrition-section h2,
+.nutrition-section p,
+.nutrition-section input[type="submit"] {
+    text-align: center; /* Centrar horizontalmente */
+}
+/* Estilos para el contenedor del botón */
+.nutrition-section .button-container {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 10px; /* Espacio superior entre el texto y el botón */
+}
+
+/* Estilos para la sección de ejercicio */
+section#Ejercicio {
+    display: flex;
+    flex-direction: row; /* Cambiar la dirección del flex a horizontal */
+    justify-content: space-between; /* Distribuir el contenido horizontalmente */
+    align-items: center; /* Centrar verticalmente los elementos */
+    text-align: left; /* Alinear el texto a la izquierda */
+    font-size: 20px
+}
+
+/* Estilos para el contenedor del contenido en la sección de ejercicio */
+.exercise-section .content-container {
+    flex: 1; /* Que el contenedor ocupe el espacio disponible */
+    margin-right: 20px; /* Espacio entre el contenido y el video */
+}
+
+/* Estilos para el contenedor del video en la sección de ejercicio */
+.exercise-section .video-container {
+    flex: 1; /* Que el contenedor ocupe el espacio disponible */
+}
+
+/* Estilos para el contenedor del botón en la sección de ejercicio */
+.exercise-section .button-container {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 10px; /* Espacio superior entre el texto y el botón */
+}
+/* Estilos para la sección "Contacto" */
+section#Contacto {
+    display: flex;
+    flex-direction: row; /* Cambiar la dirección del flex a horizontal */
+    justify-content: space-between; /* Distribuir el contenido horizontalmente */
+    align-items: center; /* Centrar verticalmente los elementos */
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-top: 20px; /* Añadir margen superior para separar del texto */
+    background-color: #333; /* Fondo gris oscuro para la sección de contacto */
+    width: 100%; /* Extender la sección al ancho completo */
+    padding: 50px; /* Agregar espacio interno */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    margin-top: 60px; /* Ajustar el margen superior */
+    margin-bottom: 60px; /* Ajustar el margen inferior */
+    font-size: 20px
+}
+
+/* Estilos para el contenedor del formulario en la sección de contacto */
+section#Contacto form {
+    flex: 1; /* Que el formulario ocupe el espacio disponible */
+    text-align: left; /* Alinear el texto del formulario a la izquierda */
+}
+section#Contacto {
+    font-family: 'Arial', sans-serif; 
+}
+
+/* Estilos para el contenedor del texto en la sección de contacto */
+section#Contacto div {
+    flex: 1; /* Que el contenedor del texto ocupe el espacio disponible */
+    text-align: center; /* Centrar el texto */
+    padding: 0 30px; /* Agregar espacio interno */
+}
+
+/* Estilos para el botón de la sección "Contacto" */
+section#Contacto input[type="submit"] {
+    background-color: rgb(51, 77, 58); /* Color de fondo verde */
+    border: none;
+    color: beige; /* Color del texto */
+    padding: 20px 40px;
+    margin-left: 80px;
+    transition: background-color 0.3s, color 0.3s; /* Agregar transición suave */
+}
+
+/* Estilos para cambiar el color del botón al pasar el cursor */
+section#Contacto input[type="submit"]:hover {
+    background-color: rgb(100, 100, 100); /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+    color: beige; /* Cambia el color del texto dentro del botón al pasar el cursor sobre él */
+}
+
+section#Contacto form label,
+section#Contacto form input[type="text"],
+section#Contacto form input[type="email"],
+section#Contacto form textarea {
+    margin-bottom: 20px; /* Agregar espacio entre las celdas del formulario */
+    margin-left: 80px;
+}
+
+
+/* Estilos para los enlaces del header */
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+    position: relative; /* Para posicionar el subrayado */
+}
+
+/* Estilos para el subrayado */
+nav ul li a::after {
+    content: ''; 
+    position: absolute; /* Posicionar el subrayado */
+    left: 0;
+    bottom: -3px; /* Ajustar la posición del subrayado */
+    width: 100%; /* Extender el subrayado horizontalmente */
+    height: 2px; /* Grosor del subrayado */
+    background-color: beige; /* Color del subrayado */
+    visibility: hidden; /* Ocultar el subrayado por defecto */
+    transition: all 0.3s ease; /* Agregar transición suave */
+}
+
+/* Estilos para mostrar el subrayado al pasar el cursor o al hacer clic */
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    visibility: visible; /* Mostrar el subrayado al pasar el cursor o al hacer clic */
+}
+/* Estilos para cambiar el color del texto ingresado en el formulario */
+section#Contacto input[type="text"],
+section#Contacto input[type="email"],
+section#Contacto input[type="text"]:focus,
+section#Contacto input[type="email"]:focus,
+section#Contacto textarea,
+section#Contacto textarea:focus {
+    color: rgb(51, 77, 58); /* Cambiar el color del texto ingresado a verde oscuro */
+}
+/* Aumentar la distancia vertical entre cada sección */
+section {
+    margin-top: 80px; /* Ajustar el margen superior */
+    margin-bottom: 80px; /* Ajustar el margen inferior */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Agregar borde inferior */
+    padding-bottom: 80px; /* Espacio adicional para la línea horizontal */
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    /* Ajustes de estilos específicos para dispositivos móviles pequeños */
+/* Asegurar que el fondo verde se extienda completamente */
+    body {
+    margin: 0 20px; /* Eliminar los márgenes */
+    padding: 0 0px; /* Ajustar el padding izquierdo y derecho */
+    }
+
+    html {
+    padding: 0; /* Eliminar el padding */
+    }
+
+    /* Reducción del margen superior de la primera imagen */
+    .Img1 {
+        margin-top: 100px; /* Ajustar el margen superior */
+    }
+
+    /* Contenedor principal más pequeño */
+    .contenedor {
+        width: 90%; /* Reducir el ancho */
+        max-width: none; /* Quitar el máximo */
+        margin: auto; /* Centrar */
+        border: none; /* Quitar el borde */
+    }
+
+    /* Ajuste de tamaño para el botón de suscripción */
+    header input[type="submit"] {
+        font-size: 8px; /* Tamaño de fuente más pequeño */
+        padding: 3px 6px; /* Reducir el padding */
+        margin-right: 30px; /* Ajustar el margen derecho */
+    }
+
+    /* Ajuste de tamaño para los iconos de redes sociales */
+    .social-icons {
+        display: flex;
+        flex-direction: column; /* Mostrar los iconos uno encima del otro */
+        align-items: center; /* Centrar los iconos horizontalmente */
+    }
+
+    .social-icon img {
+        width: 20px; /* Tamaño más pequeño */
+        height: auto; /* Mantener la proporción */
+        margin: 5px 0; /* Espacio entre los iconos */
+    }
+
+    /* Ajuste de tamaño para los subtítulos */
+    header h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para el título */
+        text-align: center; /* Centrar el título */
+    }
+
+    header nav ul li a {
+        font-size: 10px; /* Tamaño de fuente más pequeño para los enlaces */
+    }
+
+    /* Ajuste de tamaño para los subtítulos de las secciones */
+    section h2 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para los subtítulos */
+        text-align: center; /* Centrar los subtítulos */
+    }
+
+    /* Ajuste de tamaño para el texto restante */
+    body,
+    h3,
+    p,
+    li,
+    label,
+    input[type="text"],
+    input[type="email"],
+    iframe,
+    img {
+        font-size: 10px; /* Tamaño de fuente más pequeño para el resto del documento */
+        max-width: 100%; /* Ajustar el ancho máximo */
+        height: auto; /* Altura automática para imágenes y videos */
+    }
+
+    /* Reducir el padding de la cabecera */
+    header {
+        padding: 10px 20px;
+    }
+
+    /* Reducir el margen inferior del título */
+    header h1 {
+        margin-bottom: 5px;
+    }
+
+    /* Reducir el margen inferior de los enlaces en la cabecera */
+    header nav ul li a {
+        margin-bottom: 5px;
+    }
+
+    /* Centrar los enlaces en la cabecera */
+    header nav ul {
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Pequeño margen entre los enlaces */
+    }
+
+    /* Eliminar el margen derecho del último enlace */
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    /* Extender el fondo verde de extremo a extremo en todas las secciones */
+    section {
+        background-color: rgb(51, 77, 58); /* Fondo verde */
+        padding: 10px; /* Añadir un relleno más grande para extender el área verde */
+        margin-bottom: 10px; /* Espacio entre las secciones */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    /* Estilos para la sección "Planes" en dispositivos móviles */
+    section#Planes {
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección del flex para colocar los planes uno encima del otro */
+        align-items: center; /* Centrar los elementos horizontalmente */
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+
+    .planes-container .plan {
+        width: 90%; /* Reducir el ancho de los planes */
+        margin: 10px auto; /* Centrar y ajustar el espacio entre los planes */
+        padding: 10px; /* Ajustar el espacio interno dentro de cada plan */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .planes-container .plan img {
+        max-width: 80px; /* Reducir el tamaño máximo de las imágenes */
+    }
+
+    /* Estilos para la sección "Contacto" en dispositivos móviles */
+    section#Contacto {
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección del flex para colocar los elementos uno encima del otro */
+        justify-content: center; /* Centrar verticalmente los elementos */
+        text-align: center; /* Centrar el texto */
+        padding: 20px; /* Agregar espacio interno */
+    }
+
+    section#Contacto div,
+    section#Contacto form {
+        width: 90%; /* Reducir el ancho de los elementos */
+        margin: 10px auto; /* Centrar y ajustar el espacio entre los elementos */
+    }
+
+    section#Contacto input[type="submit"] {
+        margin-left: 0; /* Alinear el botón al centro */
+    }
+
+    /* Estilos para los botones "Suscribete", "Calculadora de IMC" y "Planificador de Comidas" */
+    input[type="submit"].boton-gris-claro {
+        font-size: 8px; /* Tamaño de fuente más pequeño */
+        padding: 8px 16px; /* Reducir el padding */
+        margin-right: 20px; /* Ajustar el margen derecho */
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Ajustes de estilos específicos para dispositivos móviles pequeños */
+    /* Asegurar que el fondo verde se extienda completamente */
+    body {
+        margin: 0 20px; /* Eliminar los márgenes */
+        padding: 0 0px; /* Ajustar el padding izquierdo y derecho */
+    }
+
+    html {
+        padding: 0; /* Eliminar el padding */
+    }
+
+    /* Reducción del margen superior de la primera imagen */
+    .Img1 {
+        margin-top: 100px; /* Ajustar el margen superior */
+    }
+
+    /* Contenedor principal más pequeño */
+    .contenedor {
+        width: 90%; /* Reducir el ancho */
+        max-width: none; /* Quitar el máximo */
+        margin: auto; /* Centrar */
+        border: none; /* Quitar el borde */
+    }
+
+    /* Ajuste de tamaño para el botón de suscripción */
+    header input[type="submit"] {
+        font-size: 8px; /* Tamaño de fuente más pequeño */
+        padding: 3px 6px; /* Reducir el padding */
+        margin-right: 30px; /* Ajustar el margen derecho */
+    }
+
+    /* Ajuste de tamaño para los iconos de redes sociales */
+    .social-icons {
+        display: flex;
+        flex-direction: column; /* Mostrar los iconos uno encima del otro */
+        align-items: center; /* Centrar los iconos horizontalmente */
+    }
+
+    .social-icon img {
+        width: 20px; /* Tamaño más pequeño */
+        height: auto; /* Mantener la proporción */
+        margin: 5px 0; /* Espacio entre los iconos */
+    }
+
+    /* Ajuste de tamaño para los subtítulos */
+    header h1 {
+        font-size: 40px; /* Tamaño de fuente más pequeño para el título */
+        text-align: center; /* Centrar el título */
+    }
+
+    header nav ul li a {
+        font-size: 20px; /* Tamaño de fuente más pequeño para los enlaces */
+    }
+
+    /* Ajuste de tamaño para los subtítulos de las secciones */
+    section h2 {
+        font-size: 30px; /* Tamaño de fuente más pequeño para los subtítulos */
+        text-align: center; /* Centrar los subtítulos */
+    }
+
+    /* Ajuste de tamaño para el texto restante */
+    body,
+    h3,
+    p,
+    li,
+    label,
+    input[type="text"],
+    input[type="email"],
+    iframe,
+    img {
+        font-size: 15px; /* Tamaño de fuente más pequeño para el resto del documento */
+        max-width: 100%; /* Ajustar el ancho máximo */
+        height: auto; /* Altura automática para imágenes y videos */
+    }
+
+    /* Reducir el padding de la cabecera */
+    header {
+        padding: 10px 20px;
+    }
+
+    /* Reducir el margen inferior del título */
+    header h1 {
+        margin-bottom: 5px;
+    }
+
+    /* Reducir el margen inferior de los enlaces en la cabecera */
+    header nav ul li a {
+        margin-bottom: 5px;
+    }
+
+    /* Centrar los enlaces en la cabecera */
+    header nav ul {
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Pequeño margen entre los enlaces */
+    }
+
+    /* Eliminar el margen derecho del último enlace */
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    /* Extender el fondo verde de extremo a extremo en todas las secciones */
+    section {
+        background-color: rgb(51, 77, 58); /* Fondo verde */
+        padding: 10px; /* Añadir un relleno más grande para extender el área verde */
+        margin-bottom: 10px; /* Espacio entre las secciones */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    /* Estilos para la sección "Planes" en dispositivos móviles */
+    section#Planes {
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección del flex para colocar los planes uno encima del otro */
+        align-items: center; /* Centrar los elementos horizontalmente */
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+
+    .planes-container .plan {
+        width: 90%; /* Reducir el ancho de los planes */
+        margin: 10px auto; /* Centrar y ajustar el espacio entre los planes */
+        padding: 10px; /* Ajustar el espacio interno dentro de cada plan */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .planes-container .plan img {
+        max-width: 80px; /* Reducir el tamaño máximo de las imágenes */
+    }
+
+    /* Estilos para la sección "Contacto" en dispositivos móviles */
+    section#Contacto {
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección del flex para colocar los elementos uno encima del otro */
+        justify-content: center; /* Centrar verticalmente los elementos */
+        text-align: center; /* Centrar el texto */
+        padding: 20px; /* Agregar espacio interno */
+    }
+
+    section#Contacto div,
+    section#Contacto form {
+        width: 90%; /* Reducir el ancho de los elementos */
+        margin: 10px auto; /* Centrar y ajustar el espacio entre los elementos */
+    }
+
+    section#Contacto input[type="submit"] {
+        margin-left: 0; /* Alinear el botón al centro */
+    }
+
+    /* Estilos para los botones "Suscribete", "Calculadora de IMC" y "Planificador de Comidas" */
+    input[type="submit"].boton-gris-claro {
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+        padding: 12px 16px; /* Reducir el padding */
+        margin-right: 20px; /* Ajustar el margen derecho */
+    }
+}
